@@ -9,9 +9,9 @@ public class SampleThread2 implements Runnable{
     }
 
     public static void main(String[] args) {
-//        Thread thread2 = new Thread(new SampleThread2());
-//        thread2.start();
-//        thread2.start();
+        Thread thread2 = new Thread(new SampleThread2());
+        thread2.start();
+        thread2.start();
         SampleThread2 sync = new SampleThread2();
 
         synchronized (sync){
